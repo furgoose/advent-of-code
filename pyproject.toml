@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "aoc"
+name = "aoc-fergus"
 version = "0.1.0"
 description = ""
 authors = ["Fergus Longley <ferguslongley@gmail.com>"]
@@ -15,4 +15,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.plugins."adventofcode.user"]
-"furgoose" = "aoc:solve"
+"furgoose" = "aoc_fergus:solve"

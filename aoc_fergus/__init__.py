@@ -4,7 +4,7 @@ import io
 
 
 def solve(year, day, data):
-    mod_name = f"aoc.{year}.day{day}"
+    mod_name = f"aoc_fergus.{year}.day{day}"
     sys.modules.pop(mod_name, None)
     old_stdout = sys.stdout
     sys.stdout = out = io.StringIO()
