@@ -2,7 +2,6 @@ from aocd import lines
 
 input = [x.strip() for x in lines]
 
-
 str_length = len(input[0])
 lines = len(input)
 
@@ -32,6 +31,5 @@ for b in range(str_length):
     if len(co2) <= 1:
         break
     co2 = [x for x in co2 if int(x[b]) == (find_most_common(co2, b) ^ 1)]
-
 
 print("part b:", int(oxy[0], 2) * int(co2[0], 2))

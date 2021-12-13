@@ -42,8 +42,8 @@ def solution2(input):
             x_step = -1 if p2[0] < p1[0] else 1
             y_step = -1 if p2[1] < p1[1] else 1
             for x, y in zip(
-                range(p1[0], p2[0] + x_step, x_step),
-                range(p1[1], p2[1] + y_step, y_step),
+                    range(p1[0], p2[0] + x_step, x_step),
+                    range(p1[1], p2[1] + y_step, y_step),
             ):
                 print(x, y)
                 grid[y][x] += 1

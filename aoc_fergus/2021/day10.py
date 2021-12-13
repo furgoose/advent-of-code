@@ -26,6 +26,5 @@ for line in lines:
             score += complete_score_map[c]
         complete_scores.append(score)
 
-
 print("part a:", total_error)
 print("part b:", sorted(complete_scores)[int((len(complete_scores) - 1) / 2)])

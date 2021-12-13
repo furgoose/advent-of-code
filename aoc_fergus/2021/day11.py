@@ -17,8 +17,7 @@ def step(grid):
                 if grid[y][x] > 9 and (x, y) not in flashed:
                     flashed.add((x, y))
                     search_coords = [
-                        x
-                        for x in (
+                        x for x in (
                             (x - 1, y - 1),
                             (x, y - 1),
                             (x + 1, y - 1),
@@ -27,10 +26,7 @@ def step(grid):
                             (x - 1, y + 1),
                             (x, y + 1),
                             (x + 1, y + 1),
-                        )
-                        if x[0] >= 0
-                        and x[0] < len(grid[y])
-                        and x[1] >= 0
+                        ) if x[0] >= 0 and x[0] < len(grid[y]) and x[1] >= 0
                         and x[1] < len(grid)
                     ]
                     for cx, cy in search_coords:

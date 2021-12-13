@@ -62,6 +62,5 @@ for entry in lines:
             r += "9"
     total += int(r)
 
-
 print("part a:", r1478)
 print("part b:", total)
