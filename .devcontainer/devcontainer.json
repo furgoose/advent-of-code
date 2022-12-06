@@ -11,5 +11,8 @@
 				"eamodio.gitlens"
 			]
 		}
+	},
+	"settings": {
+		"editor.formatOnSave": true
 	}
 }
